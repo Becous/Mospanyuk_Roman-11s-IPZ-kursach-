@@ -1,0 +1,57 @@
+.features {
+  padding: 62px 0;
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    max-width: 600px;
+  }
+
+  &__title {
+    @include font($fs: 52px, $lh: 119.321%);
+  }
+
+  &__text {
+    @include font($fs: 20px);
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  &__main-box {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+  }
+  &__about {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  &__about-items {
+    max-width: 269px;
+  }
+
+  &__about-items-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  &__about-title {
+    padding: 10px;
+    max-width: 153px;
+    text-align: start;
+  }
+
+  &__about-svg {
+    padding: 19px 0;
+  }
+
+  &__about-text {
+    padding: 10px;
+    text-align: start;
+    max-width: 240px;
+  }
+}

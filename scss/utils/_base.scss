@@ -10,9 +10,18 @@
     text-align: center;
     justify-content: center;
   }
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 body {
   color: white;
+  background-color: $dark_bgr;
   @include fonts(regular);
 }
 
