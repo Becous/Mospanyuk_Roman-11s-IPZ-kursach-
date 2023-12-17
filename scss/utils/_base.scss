@@ -2,4 +2,22 @@
   padding: 0;
   margin: 0 auto;
   max-width: calc(1579px - (180px * 2));
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+body {
+  color: white;
+  @include fonts(regular);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }

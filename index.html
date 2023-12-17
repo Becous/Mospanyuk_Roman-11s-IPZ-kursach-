@@ -7,104 +7,99 @@
     <title>Figma Lend</title>
   </head>
   <body>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container">
-        <!-- Header -->
-        <header class="header">
+    <!-- Header -->
+    <header class="header">
+      <div class="container container__header">
+        <div class="header__desc">
           <img src="./img/logo.png" alt="logo" class="header__logo" />
-          <ul class="nav">
-            <li class="nav__item">Home</li>
-            <li class="nav__item">Product</li>
-            <li class="nav__item">About</li>
-            <li class="nav__item">Contact</li>
+          <ul class="nav" id="burger-menu">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Product</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
           </ul>
-          <button type="button" class="header__button">Login</button>
-        </header>
-        <div class="main">
-          <h1 class="main__title">Work at the speed of thought</h1>
-          <p class="main__text">
-            Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their
-            schedule.
-          </p>
-          <div class="main__button-box">
-            <button class="main__button main__button_active">Try For Free</button>
-            <button class="main__button">Learn More</button>
-          </div>
-        </div>
-        <div class="screens">
-          <!-- <div class="screens__tile">
-            <img src="./img/screen1.jpg" alt="Перша картинка" />
-          </div>
-          <div class="screens__tile">
-            <img src="./img/screen2.jpg" alt="Друга картинка" />
-          </div>
-          <div class="screens__tile">
-            <img src="./img/screen2.jpg" alt="Третя картинка" />
-          </div> -->
-          <img src="./img/screens.png" alt="screens" class="screens__img" />
-          <div class="gradient"></div>
+          <button type="button" class="header__button" id="burger-menu-btn">Login</button>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- Featutres -->
-    <section class="features">
-      <div class="container">
-        <div class="features__title-box">
-          <h2 class="features__title">FEATURES</h2>
-          <p class="features__text">
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container container__hero">
+          <h1 class="hero__title">Work at the speed of thought</h1>
+          <p class="hero__text">
             Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their
             schedule.
           </p>
-        </div>
-        <div class="features__main-box">
-          <div class="features__img-box">
-            <img class="features__img" src="./img/Frame19.png" />
+          <div class="hero__button-box">
+            <button class="hero__button active">Try For Free</button>
+            <button class="hero__button">Learn More</button>
           </div>
-          <ul class="features__about-list">
-            <li class="features__about-items">
-              <div class="features__about-items-box">
-                <h3 class="features__about-title">A single source of truth</h3>
+          <div class="hero__img-box">
+            <img src="./img/screens.png" alt="screens" class="hero__img" />
+            <div class="gradient"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featutres -->
+      <section class="features">
+        <div class="container">
+          <div class="features__title-box">
+            <h2 class="features__title">FEATURES</h2>
+            <p class="features__text">
+              Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan
+              their schedule.
+            </p>
+          </div>
+          <div class="features__main-box">
+            <div class="features__img-box">
+              <img class="features__img" src="./img/Frame19.png" />
+            </div>
+            <ul class="features__about-list">
+              <li class="features__about-items">
+                <div class="features__about-items-box">
+                  <h3 class="features__about-title">A single source of truth</h3>
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/5cc4b69b571a163db3dd5863644bbe9cbbcf27c055e3edf9e5ca8a934d16d084?"
+                    class="features__about-svg"
+                  />
+                </div>
+                <p class="features__about-text">
+                  When you add work to your Slate calendar we automatically calculate useful insights
+                </p>
+              </li>
+              <li class="features__about-items">
+                <h3 class="features__about-title">Intuitive interface</h3>
                 <img
                   loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/5cc4b69b571a163db3dd5863644bbe9cbbcf27c055e3edf9e5ca8a934d16d084?"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed3426719876f9b33097b5ba3b88e3e07d918bdbbd1245d1b4ecf3d233ec383b?"
                   class="features__about-svg"
                 />
-              </div>
-              <p class="features__about-text">
-                When you add work to your Slate calendar we automatically calculate useful insights
-              </p>
-            </li>
-            <li class="features__about-items">
-              <h3 class="features__about-title">Intuitive interface</h3>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed3426719876f9b33097b5ba3b88e3e07d918bdbbd1245d1b4ecf3d233ec383b?"
-                class="features__about-svg"
-              />
-              <p class="features__about-text">
-                When you add work to your Slate calendar we automatically calculate useful insights
-              </p>
-            </li>
-            <li class="features__about-items">
-              <h3 class="features__about-title">Or with rules</h3>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/e636ff9e9ec5b694b80b6756fb739c546a50f2dcaab125c9d73e6594ea7f8a80?"
-                class="features__about-svg"
-              />
-              <p class="features__about-text">
-                When you add work to your Slate calendar we automatically calculate useful insights
-              </p>
-            </li>
-          </ul>
+                <p class="features__about-text">
+                  When you add work to your Slate calendar we automatically calculate useful insights
+                </p>
+              </li>
+              <li class="features__about-items">
+                <h3 class="features__about-title">Or with rules</h3>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e636ff9e9ec5b694b80b6756fb739c546a50f2dcaab125c9d73e6594ea7f8a80?"
+                  class="features__about-svg"
+                />
+                <p class="features__about-text">
+                  When you add work to your Slate calendar we automatically calculate useful insights
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Content -->
-    <section class="content">
+      <!-- Content -->
+      <!-- <section class="content">
       <div class="container content__container">
         <div class="content__title-box">
           <h2 class="content__title">Contents</h2>
@@ -131,12 +126,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    </main>
 
     <!-- Gallery -->
 
     <!-- Partners -->
-    <section class="partners">
+    <!-- <section class="partners">
       <div class="container">
         <div class="partners__title-box">
           <h2 class="partners__title-box-title">Partners</h2>
@@ -178,10 +174,10 @@
         </div>
         <button class="partners__button" type="button">All Partners</button>
       </div>
-    </section>
+    </section> -->
 
     <!-- Testimonial -->
-    <section class="testimonial">
+    <!-- <section class="testimonial">
       <div class="container">
         <h2 class="testimonial__title">Testimonials</h2>
         <div class="testimonial__box">
@@ -247,10 +243,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Some-box -->
-    <section class="some-box">
+    <!-- <section class="some-box">
       <div class="container">
         <div class="some-box__box">
           <div class="some-box__left-colum">
@@ -262,10 +258,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__content">
           <div class="footer__pages">
@@ -336,6 +332,8 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- <script src="js/menu.js"></script> -->
   </body>
 </html>
