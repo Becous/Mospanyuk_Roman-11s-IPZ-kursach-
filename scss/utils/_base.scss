@@ -18,6 +18,14 @@
     justify-content: center;
     text-align: center;
   }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 body {
   color: white;
