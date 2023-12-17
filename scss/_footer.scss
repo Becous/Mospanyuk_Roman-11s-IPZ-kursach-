@@ -1,0 +1,57 @@
+.footer {
+  padding: 107px 0;
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__pages {
+    display: flex;
+    gap: 75px;
+  }
+
+  &__pages-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title {
+    @include font($fw: mediums);
+    padding: 0;
+  }
+  &__link {
+    @include font($fw: mediums);
+    padding: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+  &__addres-tel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__addres {
+    display: flex;
+  }
+
+  &__address-text {
+    @include font($fw: mediums);
+    padding: 0 8px;
+  }
+
+  &__tel {
+    display: flex;
+  }
+}
+
+.social {
+  display: flex;
+  margin: 20px 0;
+  gap: 24px;
+}
