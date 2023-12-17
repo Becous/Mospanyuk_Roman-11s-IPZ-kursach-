@@ -42,6 +42,15 @@
   }
 }
 
+@mixin container($gap: 40px) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 @mixin mobile {
   @media screen and (max-width: 767.9px) and (min-width: 0) {
     @content;
