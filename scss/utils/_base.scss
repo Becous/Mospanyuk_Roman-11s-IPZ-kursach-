@@ -12,7 +12,13 @@
     @include container(44px);
   }
   &__partners {
-    @include container(50px);
+    @include container;
+  }
+  &__gallery {
+    @include container;
+  }
+  &__testimonial {
+    @include container;
   }
 }
 body {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Graphik-R";
   src: url("../fonts/Graphik-Regular-Trial.otf") format("opentype");
@@ -111,6 +112,40 @@ img {
           justify-content: center;
   text-align: center;
 }
+.container__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.container__testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
 
 body {
   color: white;
@@ -160,6 +195,7 @@ main {
   padding: 10px;
   font-style: normal;
   padding: 13.5px 40px;
+  cursor: pointer;
   background-color: transparent;
   border: 1px solid white;
   -webkit-box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
@@ -242,6 +278,7 @@ main {
   padding: 10px;
   font-style: normal;
   padding: 13.5px 40px;
+  cursor: pointer;
   background-color: transparent;
   border: 1px solid white;
   -webkit-box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
@@ -468,6 +505,7 @@ main {
   padding: 10px;
   font-style: normal;
   padding: 13.5px 40px;
+  cursor: pointer;
   background-color: transparent;
   border: 1px solid white;
   -webkit-box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
@@ -488,6 +526,53 @@ main {
 }
 .content__card-img {
   border-radius: 14px;
+}
+
+.gallery__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 27px;
+  max-width: 600px;
+}
+.gallery__title {
+  font-family: "Graphik-R";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 119.321%;
+  letter-spacing: 0.2px;
+  color: white;
+  padding: 10px;
+  font-style: normal;
+}
+.gallery__text {
+  font-family: "Graphik-R";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: white;
+  padding: 10px;
+  font-style: normal;
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.gallery__img {
+  width: 395px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.gallery .swiper {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .partners {
@@ -553,6 +638,7 @@ main {
   padding: 10px;
   font-style: normal;
   padding: 13.5px 40px;
+  cursor: pointer;
   background-color: transparent;
   border: 1px solid white;
   -webkit-box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
@@ -570,6 +656,82 @@ main {
 }
 .partners__button.active:focus, .partners__button.active:hover {
   background-color: #3643d8;
+}
+
+.testimonial {
+  padding: 50px 0;
+}
+.testimonial__title {
+  font-family: "Graphik-R";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 119.231%;
+  letter-spacing: 0.2px;
+  color: white;
+  padding: 10px;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+.testimonial__item {
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  max-width: 430px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.testimonial__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimonial__author-info {
+  text-align: start;
+  font-family: "Graphik-M";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: white;
+  padding: 10px;
+  font-style: normal;
+}
+.testimonial__quote {
+  font-family: "Graphik-R";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: white;
+  padding: 10px;
+  font-style: normal;
+  text-align: start;
+  max-width: 320px;
+  margin-top: 30px;
+}
+.testimonial .swiper {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.testimonial .slider-wraper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Центрування слайдів по горизонталі */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .some-box {
@@ -624,6 +786,7 @@ main {
   padding: 10px;
   font-style: normal;
   padding: 13.5px 40px;
+  cursor: pointer;
   background-color: transparent;
   border: 1px solid white;
   -webkit-box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);

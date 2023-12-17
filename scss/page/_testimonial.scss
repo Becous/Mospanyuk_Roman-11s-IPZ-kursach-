@@ -1,0 +1,42 @@
+.testimonial {
+  padding: 50px 0;
+  &__title {
+    @include font($fs: 52px, $lh: 119.231%);
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    max-width: 430px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+  }
+  &__author-info {
+    text-align: start;
+    @include font($fw: mediums);
+  }
+
+  &__quote {
+    @include font;
+    text-align: start;
+    max-width: 320px;
+    margin-top: 30px;
+  }
+  .swiper {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .slider-wraper {
+    display: inline-flex;
+    justify-content: center; /* Центрування слайдів по горизонталі */
+    align-items: center;
+  }
+}

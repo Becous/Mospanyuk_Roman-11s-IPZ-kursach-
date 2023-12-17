@@ -11,6 +11,7 @@
 @mixin button {
   @include font($fs: 17px, $fw: mediums, $lh: 147.059%);
   padding: 13.5px 40px;
+  cursor: pointer;
   background-color: transparent;
   border: 1px solid white;
   box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
@@ -42,7 +43,7 @@
   }
 }
 
-@mixin container($gap: 40px) {
+@mixin container($gap: 50px) {
   display: flex;
   flex-direction: column;
   gap: $gap;
