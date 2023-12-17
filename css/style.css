@@ -532,6 +532,17 @@ main {
   display: flex;
   gap: 74px;
 }
+.partners__link {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.partners__link:focus, .partners__link:hover {
+  border-radius: 15px;
+  padding: 30px;
+  background-color: white;
+}
 .partners__button {
   font-family: "Graphik-M";
   font-weight: 500;
@@ -558,5 +569,77 @@ main {
   background-color: #4452fe;
 }
 .partners__button.active:focus, .partners__button.active:hover {
+  background-color: #3643d8;
+}
+
+.some-box {
+  padding: 80px 0;
+}
+.some-box__box {
+  border-radius: 33px;
+  background-color: #343434;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.some-box__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 37px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 17px 65px;
+}
+.some-box__text {
+  font-family: "Graphik-R";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 150%;
+  letter-spacing: 119.231%;
+  color: white;
+  padding: 10px;
+  font-style: normal;
+  padding: 0 10px;
+  min-width: 479px;
+}
+.some-box__button {
+  font-family: "Graphik-M";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 147.059%;
+  letter-spacing: 0.2px;
+  color: white;
+  padding: 10px;
+  font-style: normal;
+  padding: 13.5px 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+  padding: 13.5px 67px;
+}
+.some-box__button:focus, .some-box__button:hover {
+  border: 1px solid transparent;
+  background-color: #3643d8;
+}
+.some-box__button.active {
+  border: 1px solid transparent;
+  background-color: #4452fe;
+}
+.some-box__button.active:focus, .some-box__button.active:hover {
   background-color: #3643d8;
 }
