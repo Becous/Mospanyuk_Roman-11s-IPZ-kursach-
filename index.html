@@ -34,7 +34,7 @@
             schedule.
           </p>
           <div class="hero__button-box">
-            <button class="hero__button active">Try For Free</button>
+            <button class="hero__button active" data-modal-open type="button">Try For Free</button>
             <button class="hero__button">Learn More</button>
           </div>
           <div class="hero__img-box">
@@ -124,7 +124,7 @@
                   Ever wondered if you're too reliant on a client for work? Slate helps you identify .
                 </p>
               </div>
-              <button class="content__card-button active">Try For Free</button>
+              <button class="content__card-button active" type="button" data-modal-open>Try For Free</button>
               <img src="./img/trash.jpg" alt="" class="content__card-img" width="379" height="276" />
             </div>
           </div>
@@ -141,8 +141,8 @@
             </p>
           </div>
         </div>
-        <div class="swiper testimonial__swiper">
-          <div class="testimonial__slider-wraper swiper-wrapper">
+        <div class="swiper gallery__swpiper">
+          <div class="gallery__swpiper-wraper swiper-wrapper">
             <div class="swiper-slide">
               <div class="testimonial__item">
                 <div class="testimonial__author">
@@ -272,7 +272,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination testimonial__pagination"></div>
+          <div class="swiper-pagination gallery__pagination"></div>
         </div>
       </section>
 
@@ -479,7 +479,7 @@
           <div class="some-box__box">
             <div class="some-box__left">
               <h3 class="some-box__text">OpenType features and Variable fonts</h3>
-              <button type="button" class="some-box__button active">Try For Free</button>
+              <button type="button" class="some-box__button active" data-modal-open>Try For Free</button>
             </div>
             <div class="some-box__right">
               <img src="./img/Linec.png" alt="" class="some-box__img" />
@@ -487,84 +487,98 @@
           </div>
         </div>
       </section>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="container container__footer">
-          <div class="footer__content">
-            <div class="footer__pages">
-              <div class="footer__pages-column">
-                <h3 class="footer__title">Fingertipe</h3>
-                <ul class="footer__list">
-                  <li class="footer__page"><a href="#" class="footer__link">Home</a></li>
-                  <li class="footer__page"><a href="#" class="footer__link">Examples</a></li>
-                  <li class="footer__page"><a href="#" class="footer__link">Pricing</a></li>
-                  <li class="footer__page"><a href="#" class="footer__link">Updates</a></li>
-                </ul>
-              </div>
-              <div class="footer__pages-column">
-                <h3 class="footer__title">Resources</h3>
-                <ul class="footer__list">
-                  <li class="footer__page"><a href="#" class="footer__link">Home</a></li>
-                  <li class="footer__page"><a href="#" class="footer__link">Examples</a></li>
-                  <li class="footer__page"><a href="#" class="footer__link">Pricing</a></li>
-                  <li class="footer__page"><a href="#" class="footer__link">Updates</a></li>
-                </ul>
-              </div>
-              <div class="footer__pages-column">
-                <h3 class="footer__title">About</h3>
-                <ul class="footer__list">
-                  <li class="footer__page"><a href="#" class="footer__link">Home</a></li>
-                  <li class="footer__page"><a href="#" class="footer__link">Examples</a></li>
-                  <li class="footer__page"><a href="#" class="footer__link">Pricing</a></li>
-                  <li class="footer__page"><a href="#" class="footer__link">Updates</a></li>
-                </ul>
-              </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container container__footer">
+        <div class="footer__content">
+          <div class="footer__pages">
+            <div class="footer__pages-column">
+              <h3 class="footer__title">Fingertipe</h3>
+              <ul class="footer__list">
+                <li class="footer__page"><a href="#" class="footer__link">Home</a></li>
+                <li class="footer__page"><a href="#" class="footer__link">Examples</a></li>
+                <li class="footer__page"><a href="#" class="footer__link">Pricing</a></li>
+                <li class="footer__page"><a href="#" class="footer__link">Updates</a></li>
+              </ul>
             </div>
-            <div class="footer__info">
-              <address class="footer__addres-tel">
-                <div class="footer__addres">
-                  <svg class="footer__icon" width="46" height="46">
-                    <use href="./img/svg/icon.svg#bx"></use>
-                  </svg>
-                  <p class="footer__address-text">7480 Mockingbird Hill undefined</p>
-                </div>
-                <div class="footer__tel">
-                  <svg class="footer__icon" width="35" height="35">
-                    <use href="./img/svg/icon.svg#phone"></use>
-                  </svg>
-                  <p class="footer__address-text">(239) 555-0108</p>
-                </div>
-                <ul class="social">
-                  <li class="social__item">
-                    <a class="social__link social__link_dark" href="https://instagram.com" rel="nofollow">
-                      <svg class="social__icon" width="40" height="40">
-                        <use href="./img/svg/icon.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link_dark" href="https://instagram.com" rel="nofollow">
-                      <svg class="social__icon" width="40" height="40">
-                        <use href="./img/svg/icon.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link_dark" href="https://instagram.com" rel="nofollow">
-                      <svg class="social__icon" width="40" height="40">
-                        <use href="./img/svg/icon.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </address>
+            <div class="footer__pages-column">
+              <h3 class="footer__title">Resources</h3>
+              <ul class="footer__list">
+                <li class="footer__page"><a href="#" class="footer__link">Home</a></li>
+                <li class="footer__page"><a href="#" class="footer__link">Examples</a></li>
+                <li class="footer__page"><a href="#" class="footer__link">Pricing</a></li>
+                <li class="footer__page"><a href="#" class="footer__link">Updates</a></li>
+              </ul>
+            </div>
+            <div class="footer__pages-column">
+              <h3 class="footer__title">About</h3>
+              <ul class="footer__list">
+                <li class="footer__page"><a href="#" class="footer__link">Home</a></li>
+                <li class="footer__page"><a href="#" class="footer__link">Examples</a></li>
+                <li class="footer__page"><a href="#" class="footer__link">Pricing</a></li>
+                <li class="footer__page"><a href="#" class="footer__link">Updates</a></li>
+              </ul>
             </div>
           </div>
+          <div class="footer__info">
+            <address class="footer__addres-tel">
+              <div class="footer__addres">
+                <svg class="footer__icon" width="46" height="46">
+                  <use href="./img/svg/icon.svg#bx"></use>
+                </svg>
+                <p class="footer__address-text">7480 Mockingbird Hill undefined</p>
+              </div>
+              <div class="footer__tel">
+                <svg class="footer__icon" width="35" height="35">
+                  <use href="./img/svg/icon.svg#phone"></use>
+                </svg>
+                <p class="footer__address-text">(239) 555-0108</p>
+              </div>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link social__link_dark" href="https://instagram.com" rel="nofollow">
+                    <svg class="social__icon" width="40" height="40">
+                      <use href="./img/svg/icon.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link_dark" href="https://instagram.com" rel="nofollow">
+                    <svg class="social__icon" width="40" height="40">
+                      <use href="./img/svg/icon.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link_dark" href="https://instagram.com" rel="nofollow">
+                    <svg class="social__icon" width="40" height="40">
+                      <use href="./img/svg/icon.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window no-scroll">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="close-button__icon" fill="black">
+            <use href="./img/svg/icons.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="form__h2">Write your opinion</h2>
+        <form class="form"></form>
+      </div>
+    </div>
+
     <script src="./js/swiper.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/swipers.js"></script>
   </body>
 </html>

@@ -30,13 +30,24 @@
     margin-top: 30px;
   }
   .swiper {
-    position: relative;
     margin: 0 auto;
     padding-bottom: 50px;
+    max-width: 880px;
   }
   .slider-wraper {
-    display: inline-flex;
+    display: flex;
     justify-content: center; /* Центрування слайдів по горизонталі */
     align-items: center;
+  }
+  .testimonial__pagination {
+    padding-top: 24px;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border: 2px solid $primary;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $primary;
   }
 }
