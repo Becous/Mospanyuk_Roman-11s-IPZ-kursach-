@@ -1,9 +1,12 @@
 .container {
   padding: 0;
   margin: 0 auto;
-  max-width: calc(1579px - (180px * 2));
+  // max-width: calc(1579px - (180px * 2));
+  max-width: calc(100% - 30px);
   &__hero {
     @include container(35px);
+    max-width: 100%;
+    overflow: hidden;
   }
   &__features {
     @include container(80px);
@@ -20,6 +23,12 @@
   &__testimonial {
     @include container;
   }
+  &__some-box {
+    max-width: calc(100% - 240px);
+  }
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   color: white;
@@ -31,4 +40,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  @media (max-width: 1375px) {
+    gap: 0;
+  }
 }

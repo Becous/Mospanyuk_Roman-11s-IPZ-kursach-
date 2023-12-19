@@ -5,6 +5,12 @@
     background-color: $some-box__bgr;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    @media(max-width: 1375px){
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 20px;
+    }
   }
 
   &__left {
@@ -14,16 +20,31 @@
     justify-content: center;
     align-items: start;
     padding: 17px 65px;
+    @media(max-width: 1375px){
+      align-items: center;
+      text-align: center;
+    }
+    @media(max-width: 650px){
+      padding: 17px 0;
+    }
   }
 
   &__text {
     @include font($ls: 119.231%, $fs: 52px);
     padding: 0 10px;
-    min-width: 479px;
+    // min-width: 479px;
+    @media(max-width: 600px){
+      font-size: 36px;
+    }
   }
 
   &__button {
     @include button;
     padding: 13.5px 67px;
+  }
+
+  &__img{
+    max-width: 100%;
+    height: auto;
   }
 }

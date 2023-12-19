@@ -27,15 +27,58 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
-  min-width: 528px;
+  padding: calc(100%/100*2);
   background-color: white;
   opacity: 1;
   border-radius: 4px;
+  width: 70%;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &__input{
+    font-size: 20px;
+    color: $primary;
+    padding: 10px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid $primary;
+    outline: none;
+    resize: none;
+    height: 100px;
+    &::placeholder{
+        color: $primary        
+    }
+    &::placeholder:hover,
+    &::placeholder:focus{
+      color: $primary_hover        
+  }    
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  &__submit{
+    background-color: $primary;
+    color: white;
+    padding: 15px 5px;
+    border: 1px solid transparent;
+    transition: 250ms ease-in;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-top: auto;
+    &:hover,
+    &:focus{
+      background-color: transparent;
+      border: 1px solid $primary;
+      color: $primary;
+    }
+  }
 }
 .close-button {
   display: flex;
@@ -69,7 +112,8 @@
 
   &__h2 {
     @include font;
-    color: black;
+    color: $primary;
+    font-size: 24px;
     margin-bottom: 12px;
     text-align: center;
   }

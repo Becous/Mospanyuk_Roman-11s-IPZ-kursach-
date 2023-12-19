@@ -20,6 +20,8 @@
   &__list {
     display: flex;
     gap: 74px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__link {

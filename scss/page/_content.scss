@@ -21,6 +21,10 @@
     display: flex;
     gap: 33px;
     justify-content: center;
+    flex-wrap: wrap;
+    @media(max-width: 550px){
+      max-width: 95%;;
+    }
   }
 
   &__card {
@@ -33,6 +37,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @media(max-width: 470px){
+      width: 100%;
+    }
+    & img{
+      @media(max-width: 470px){
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   &__card-title-box {

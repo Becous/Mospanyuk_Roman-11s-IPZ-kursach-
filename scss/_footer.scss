@@ -1,13 +1,24 @@
 .footer {
   padding: 107px 0;
+  @media(max-width: 950px){
+    padding: 25px 0;
+  }
   &__content {
     display: flex;
     justify-content: space-evenly;
+    @media(max-width: 950px){
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
   }
 
   &__pages {
     display: flex;
     gap: 75px;
+    @media(max-width: 950px){
+      flex-wrap: wrap;
+    }
   }
 
   &__pages-column {

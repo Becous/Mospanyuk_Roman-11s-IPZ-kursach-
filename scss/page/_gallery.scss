@@ -16,16 +16,17 @@
     text-align: center;
     margin-bottom: 50px;
   }
-  &__img {
-    width: 395px;
-    height: 100%;
+  &__image {
     object-fit: cover;
-    border-radius: 15px;
+    object-position: center;
+    border: 6px solid white;
+    border-radius: 12px;
   }
   .swiper {
-    position: relative;
-    margin: 0 auto;
     padding-bottom: 50px;
+    &-slide {
+      width: unset;
+    }
   }
   .swiper-pagination-bullet {
     width: 12px;
