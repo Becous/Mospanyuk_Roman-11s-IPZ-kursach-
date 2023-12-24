@@ -13,7 +13,6 @@
 
   &__text {
     @include font($fs: 20px);
-    padding: 0 10px;
     text-align: center;
   }
 
@@ -22,12 +21,16 @@
     gap: 74px;
     flex-wrap: wrap;
     justify-content: center;
+    @media (max-width: 768px) {
+      max-width: 450px;
+    }
   }
 
   &__link {
-    width: 100%;
-    height: 100%;
     transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:focus,
     &:hover {
       border-radius: 15px;

@@ -1,7 +1,6 @@
 .container {
-  padding: 0;
+  padding: 0 15px;
   margin: 0 auto;
-  // max-width: calc(1579px - (180px * 2));
   max-width: calc(100% - 30px);
   &__hero {
     @include container(35px);
@@ -24,6 +23,9 @@
     @include container;
   }
   &__some-box {
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
     max-width: calc(100% - 240px);
   }
 }
@@ -34,13 +36,4 @@ body {
   color: white;
   background-color: $dark_bgr;
   @include fonts(regular);
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  @media (max-width: 1375px) {
-    gap: 0;
-  }
 }

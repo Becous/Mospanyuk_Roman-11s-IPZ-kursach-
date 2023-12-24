@@ -13,7 +13,6 @@
 
   &__text {
     @include font($fs: 20px);
-    padding: 0 10px;
     text-align: center;
   }
 
@@ -22,8 +21,8 @@
     gap: 33px;
     justify-content: center;
     flex-wrap: wrap;
-    @media(max-width: 550px){
-      max-width: 95%;;
+    @media (max-width: 550px) {
+      max-width: 95%;
     }
   }
 
@@ -37,11 +36,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    @media(max-width: 470px){
+    @media (max-width: 470px) {
       width: 100%;
     }
-    & img{
-      @media(max-width: 470px){
+    & img {
+      @media (max-width: 470px) {
         width: 100%;
         height: auto;
       }

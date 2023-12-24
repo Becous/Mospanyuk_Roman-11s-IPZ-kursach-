@@ -1,12 +1,12 @@
 .footer {
   padding: 107px 0;
-  @media(max-width: 950px){
+  @media (max-width: 950px) {
     padding: 25px 0;
   }
   &__content {
     display: flex;
     justify-content: space-evenly;
-    @media(max-width: 950px){
+    @media (max-width: 950px) {
       flex-direction: column;
       gap: 50px;
       align-items: center;
@@ -16,7 +16,7 @@
   &__pages {
     display: flex;
     gap: 75px;
-    @media(max-width: 950px){
+    @media (max-width: 950px) {
       flex-wrap: wrap;
     }
   }
@@ -29,11 +29,13 @@
 
   &__title {
     @include font($fw: mediums);
-    padding: 0;
   }
   &__link {
     @include font($fw: mediums);
-    padding: 0;
+    &:focus,
+    &:hover {
+      color: #4452fe;
+    }
   }
 
   &__list {
@@ -49,15 +51,21 @@
 
   &__addres {
     display: flex;
+    gap: 8px;
   }
 
   &__address-text {
     @include font($fw: mediums);
-    padding: 0 8px;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      color: #4452fe;
+    }
   }
 
   &__tel {
     display: flex;
+    gap: 8px;
   }
 }
 
@@ -65,4 +73,11 @@
   display: flex;
   margin: 20px 0;
   gap: 24px;
+  &__icon {
+    color: white;
+    &:focus,
+    &:hover {
+      color: #4452fe;
+    }
+  }
 }
