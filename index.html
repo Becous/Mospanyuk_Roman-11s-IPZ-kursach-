@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/swiper.css" />
     <title>Figma Lend</title>
@@ -20,6 +21,25 @@
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
           <button type="button" class="header__button" id="burger-menu-btn">Login</button>
+          <button class="hamburger">
+            <svg class="menuIcon" width="66" height="53">
+              <use href="./img/svg/icon.svg#bx-open"></use>
+            </svg>
+            <svg class="closeIcon" width="66" height="53">
+              <use href="./img/svg/icon.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header_mobile">
+          <ul class="menu">
+            <li>
+              <a href="#" class="menuItem"> <img src="./img/logo.png" alt="Logo" class="header__logo" /></a>
+            </li>
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Product</a></li>
+            <li><a class="menuItem" href="#">About</a></li>
+            <li><a class="menuItem" href="#">Contacts</a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -480,6 +500,7 @@
     </div>
 
     <script src="./js/swiper.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/swipers.js"></script>
   </body>
