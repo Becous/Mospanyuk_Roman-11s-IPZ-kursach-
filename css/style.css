@@ -238,6 +238,10 @@ body {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .menuItem {
   display: block;
   margin: 2rem 4rem;
@@ -246,8 +250,9 @@ body {
   text-decoration: none;
 }
 
-.menuItem:hover {
-  text-decoration: underline;
+.menuItem:hover,
+.menuItem:focus {
+  color: #4452fe;
 }
 
 .hamburger {

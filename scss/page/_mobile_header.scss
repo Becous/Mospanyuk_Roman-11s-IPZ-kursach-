@@ -6,8 +6,9 @@
   text-decoration: none;
 }
 
-.menuItem:hover {
-  text-decoration: underline;
+.menuItem:hover,
+.menuItem:focus {
+  color: $primary;
 }
 
 .hamburger {

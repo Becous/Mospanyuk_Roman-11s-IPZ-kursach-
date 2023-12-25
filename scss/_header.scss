@@ -19,7 +19,11 @@
   &__link {
     @include font;
   }
-  @media (max-width:900px){
+  @media (max-width: 900px) {
     display: none;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
