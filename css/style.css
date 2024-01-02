@@ -216,6 +216,11 @@ body {
 .header__button.active:focus, .header__button.active:hover {
   background-color: #3643d8;
 }
+@media screen and (max-width: 767.9px) and (min-width: 0) {
+  .header__button {
+    display: none;
+  }
+}
 
 .nav {
   display: -webkit-box;
@@ -302,6 +307,13 @@ body {
 .menuIcon,
 .closeIcon {
   color: white;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.menuIcon:hover, .menuIcon:focus,
+.closeIcon:hover,
+.closeIcon:focus {
+  color: #4452fe;
 }
 
 .hero {
@@ -1078,7 +1090,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 2%;
-  background-color: white;
+  background-color: #181818;
   opacity: 1;
   border-radius: 4px;
   width: 70%;
@@ -1094,7 +1106,7 @@ body {
   color: #4452fe;
   padding: 10px;
   height: 50px;
-  background-color: white;
+  background-color: #181818;
   border: 1px solid #4452fe;
   outline: none;
   resize: none;
@@ -1170,20 +1182,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
-  background-color: white;
+  background-color: #181818;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 .close-button__icon {
   width: 18px;
   height: 18px;
-  fill: #4452fe;
-  -webkit-transition: fill 0.5s;
-  transition: fill 0.5s;
+  color: #4452fe;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
-.close-button:hover .close-button__icon, .close-button:focus .close-button__icon {
-  fill: #3643d8;
+.close-button__icon:hover, .close-button__icon:focus {
+  color: white;
 }
 
 .form {

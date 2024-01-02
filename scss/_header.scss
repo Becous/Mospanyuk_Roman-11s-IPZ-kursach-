@@ -11,6 +11,9 @@
   }
   &__button {
     @include button;
+    @include mobile {
+      display: none;
+    }
   }
 }
 .nav {

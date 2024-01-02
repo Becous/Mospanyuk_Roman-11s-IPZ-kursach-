@@ -51,4 +51,9 @@
 .menuIcon,
 .closeIcon {
   color: white;
+  transition: color 0.5s;
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
 }
