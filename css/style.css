@@ -237,6 +237,9 @@ body {
   color: white;
   font-style: normal;
 }
+.nav__link:hover, .nav__link:focus {
+  color: #4452fe;
+}
 @media (max-width: 900px) {
   .nav {
     display: none;

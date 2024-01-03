@@ -21,6 +21,10 @@
   gap: 31px;
   &__link {
     @include font;
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
   }
   @media (max-width: 900px) {
     display: none;
