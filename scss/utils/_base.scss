@@ -1,0 +1,39 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: calc(100% - 30px);
+  &__hero {
+    @include container(35px);
+    max-width: 100%;
+    overflow: hidden;
+  }
+  &__features {
+    @include container(80px);
+  }
+  &__content {
+    @include container(44px);
+  }
+  &__partners {
+    @include container;
+  }
+  &__gallery {
+    @include container;
+  }
+  &__testimonial {
+    @include container;
+  }
+  &__some-box {
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+    max-width: calc(100% - 240px);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: white;
+  background-color: $dark_bgr;
+  @include fonts(regular);
+}

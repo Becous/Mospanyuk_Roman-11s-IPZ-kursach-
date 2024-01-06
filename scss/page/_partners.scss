@@ -1,0 +1,44 @@
+.partners {
+  padding: 50px 0;
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    max-width: 600px;
+  }
+
+  &__title {
+    @include font($fs: 52px, $lh: 119.321%);
+  }
+
+  &__text {
+    @include font($fs: 20px);
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 74px;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 768px) {
+      max-width: 450px;
+    }
+  }
+
+  &__link {
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:focus,
+    &:hover {
+      border-radius: 15px;
+      padding: 30px;
+      background-color: white;
+    }
+  }
+  &__button {
+    @include button;
+  }
+}

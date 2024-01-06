@@ -1,0 +1,64 @@
+@mixin font($fw: regular, $fs: 16px, $lh: 150%, $ls: 0.2px) {
+  @include fonts($fw);
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: white;
+  font-style: normal;
+}
+
+@mixin button {
+  @include font($fs: 17px, $fw: mediums, $lh: 147.059%);
+  padding: 13.5px 40px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease-in;
+  &:focus,
+  &:hover {
+    border: 1px solid transparent;
+    background-color: $primary_hover;
+  }
+  &.active {
+    border: 1px solid transparent;
+    background-color: $primary;
+    &:focus,
+    &:hover {
+      background-color: $primary_hover;
+    }
+  }
+}
+
+@mixin fonts($fw) {
+  $regular: 400;
+  $mediums: 500;
+  @if $fw == regular {
+    font-family: "Graphik-R";
+    font-weight: 400;
+  } @else if $fw == mediums {
+    font-family: "Graphik-M";
+    font-weight: 500;
+  }
+}
+
+@mixin container($gap: 50px) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 767.9px) and (min-width: 0) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
