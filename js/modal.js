@@ -31,8 +31,8 @@
 
       var subscribe = `New message recieved :${message}`;
 
-      var token = "6270391808:AAEeDST2kRZacIxzisJz-GBovp8C8uRHcY0";
-      var chat_id = "308432208";
+      var token = "6550126443:AAFYvUBYzNuixaQS1Lx65W1aXDYi9VnETlg";
+      var chat_id = "870388250";
       var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${subscribe}&parse_mode=html`;
 
       let api = new XMLHttpRequest();
@@ -79,8 +79,8 @@
 
       var subscribe = `New message recieved :${message}`;
 
-      var token = "6270391808:AAEeDST2kRZacIxzisJz-GBovp8C8uRHcY0";
-      var chat_id = "308432208";
+      var token = "6550126443:AAFYvUBYzNuixaQS1Lx65W1aXDYi9VnETlg";
+      var chat_id = "870388250";
       var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${subscribe}&parse_mode=html`;
 
       let api = new XMLHttpRequest();
@@ -127,8 +127,8 @@
 
       var subscribe = `New message recieved :${message}`;
 
-      var token = "6270391808:AAEeDST2kRZacIxzisJz-GBovp8C8uRHcY0";
-      var chat_id = "308432208";
+      var token = "6550126443:AAFYvUBYzNuixaQS1Lx65W1aXDYi9VnETlg";
+      var chat_id = "870388250";
       var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${subscribe}&parse_mode=html`;
 
       let api = new XMLHttpRequest();
